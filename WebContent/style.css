@@ -1,0 +1,208 @@
+body{
+	
+	margin:0;
+	padding:0;
+	background-color: #09F;
+	font-family: "Microsoft YaHei" ! important;
+	font-size: 14px;	
+	
+}
+#bottombar{
+	
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 1000;
+	height:40px;
+	background-color:#000;
+	-ie6-position-fixed-delay: 200;
+	
+}
+
+.window{
+	
+	left:10px;
+	top:10px;
+	position: fixed;
+	width:250px;
+	height:320px;
+	background-color: #fff;
+	
+}
+
+.window .title{
+	
+	background-color: #000;
+	height:30px;
+	position: relative;
+	
+}
+.window .title .header{
+	
+	float: left;
+	
+}
+
+.window .title h4{
+	
+	margin-top:0px;
+	margin-left:50px;
+	color:#fff;
+	font-size: 12px;
+	padding:5px;
+	
+}
+
+.window .title .menu{
+	
+	float: right;
+	position: absolute;
+	height: 12px;
+	right: 0;
+	top: 2px;
+	width: 14px;
+	
+}
+.window .title .menu .minimize{
+	
+	width: 14px;	
+	background: url(images/minimize-bullet.png);
+
+}
+
+.window .user-list{
+	
+	margin: 0;
+	padding: 5px;
+	margin-bottom: 5px;
+	height:100%;
+	
+}
+
+.user{
+	
+	display: block;
+	padding: 2px 10px;
+	height:210px;
+	cursor: pointer;
+	border: 0 none;
+	width: auto;
+	cursor: pointer;
+	border-image: initial;
+	list-style: none;
+	overflow: auto;
+
+}
+
+.window .user .avatar img{
+	
+	display: inline-block;
+	vertical-align: middle;
+	width: 32px;
+	height: 32px;
+	overflow: hidden;
+	margin-right: 1ex;
+	
+	
+}
+
+.window .user .name {
+	
+	display: inline-block;
+	width: 6.2em;
+	height: 1.2em;
+	vertical-align: middle;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size:12px;
+}
+.window .user .name a{
+	
+	text-decoration: none;
+	color: #005EAC;
+	
+}
+.window .user .name a:hover{
+	
+	color: #005EAC;
+	
+}
+.window .searchbar{
+	
+	background-color: #ccffff;
+	
+}
+
+.window .friends-state{
+	
+	margin-top:0px;
+	font-size:8px;
+	color:#7a9999;
+}
+
+.window .searchbar input {
+	box-sizing: border-box;
+	width: 100%;
+	height: 22px;
+	line-height: 22px;
+	border: 1px solid #B2B2B2;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	background: url(images/search.png) no-repeat left center;
+	padding-left: 26px;
+	padding-right: 16px;
+	border-image: initial;
+	
+}
+
+.dialog-box{
+	
+	margin: 0;
+	padding: 5px;
+	margin-bottom: 5px;
+	height:75%;
+	background-color: #eee;
+}
+
+.dialog-box .dialog-list{
+	
+	background-color: #fff;
+	margin-top:0px;
+	margin-left:2px;
+	margin-right:2px;
+	height: 230px;
+	overflow: auto;
+	width: 240px;
+	
+}
+
+.editor-box textarea{
+	
+	width: 100%;
+	padding-right: 60px;
+	height: 38px;
+	box-sizing: border-box;
+	border: 1px solid #84ABC6;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	overflow: visible;
+	color:#000;
+	
+	
+}
+.editor-box input{
+	
+	position: relative;
+	float: right;
+	margin-top: -32px;
+	margin-right: 6px;
+	
+}
+.send-button{
+	
+	font-weight: bolder;
+	color:#ffffff;
+	
+}

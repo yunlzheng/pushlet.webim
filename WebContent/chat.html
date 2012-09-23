@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link href="style.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/ajax-pushlet-client.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="chat.js"></script>
+<script type="text/javascript" src="drag-jquery.js"></script>
+ 
+</head>
+<body onload="init()">
+<!--  
+	<div class="window" id="windowDemo" style="left:400px;top:100px">
+		
+		<div class="title">
+			<div class="header">
+				<img src="images/user.gif"/>
+			</div>
+			<h4>你正在和...聊天</h4>
+			<div class="menu">
+				<span class="minimize" title="最小化">-</span>
+			</div>
+		</div>
+		<div class="dialog-box"> 
+			<div class="dialog-list">
+			
+			</div>
+		</div>
+		<div class="editor-box">
+			<form class="editor" action="" method="post">
+				<textarea></textarea><input type="image" src="images/send-button.png">
+			</form>
+		</div>
+	
+	</div>
+-->	
+	<div class="window" id="friends-panel" style="left:700px;width:180px;top:100px">
+		
+		<div class="title">
+			<h4>好友列表</h4>
+			<div class="menu">
+				<span class="minimize" title="最小化">-</span>
+			</div>
+		</div>
+		
+		<div class="user-list">
+			
+			<div class="searchbar box">
+			
+				<form class="searchbar" action="#" method="post">
+					<input type="text" style="color: rgb(136, 136, 136); ">
+					<span class="clear" style="display: none; ">
+					<a href="#"><img src="http://a.xnimg.cn/n/core/res/webpager/clear.png" alt="清除"></a></span>
+				</form>
+				
+			</div>
+			
+			<ul class="user" id="ul-user">
+		
+			</ul>
+			<div class="friends-state">
+				<span><img src="images/onlinegroup_mini.gif">在线好友20人</span>
+			</div>
+		</div>
+	</div>
+	
+	<div id="bottombar"></div>
+</body>
+</html>

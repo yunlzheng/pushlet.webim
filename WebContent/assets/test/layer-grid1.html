@@ -1,0 +1,72 @@
+<!-- 
+  
+  $Id: layer-grid1.html,v 1.4 2004/10/25 20:32:27 justb Exp $
+  author: Just van den Broecke
+  $Log: layer-grid1.html,v $
+  Revision 1.4  2004/10/25 20:32:27  justb
+  *** empty log message ***
+
+  Revision 1.3  2003/08/15 08:58:22  justb
+  fixed all CVS source links
+
+  Revision 1.2  2003/04/30 22:13:31  justb
+  revised all examples to use new api.js (support all browsers now!)
+
+  Revision 1.1.1.1  2002/09/24 21:03:56  justb
+  import to sourceforge
+
+  Revision 1.1.1.1  2002/09/20 22:48:25  justb
+  import to SF
+
+  Revision 1.1.1.1  2002/09/20 14:32:40  justb
+  first import into SF
+
+  Revision 1.1  2002/07/29 13:19:33  just
+  no message
+
+-->
+<HTML>
+<HEAD>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta http-equiv="Pragma" content="no-cache">
+   <SCRIPT LANGUAGE="JavaScript" src="../util.js"></SCRIPT>
+   <SCRIPT LANGUAGE="JavaScript" src="../layer.js"></SCRIPT>
+   <SCRIPT LANGUAGE="JavaScript" src="../layer-grid.js"></SCRIPT>
+
+   <TITLE>TEST LAYER GRID</TITLE>
+
+<script language="JavaScript">
+var layerGrid;
+
+function init() {
+var page="<BR>";
+
+        for (var i=0; i < 15; i++) {
+        	page = page + "<DIV ID='A"+i+"' STYLE='position:absolute;'>"+i+"</DIV><BR>"; 
+        }
+        displayFrame.document.write(page)
+        displayFrame.document.close()
+//        displayFrame.document.A0.document.writeln("hello");
+//        displayFrame.document.A0.document.close();
+ 	layerGrid = new LayerGrid('A', displayFrame, 3, 5, 100, 50, 150, 150 );
+ //	page = layerGrid.getSkeletonHTML();
+ //	alert(page)
+ //       displayFrame.document.writeln(page)
+ //       displayFrame.document.close()
+ 	for (var i=0; i < 15; i++) {
+        	layerGrid.writeCellAtIndex(i, "<font size=1 color=white>hello"+i+"</font>", 'blue'); 
+        }
+
+}
+      
+</script>
+
+</HEAD>
+
+<FRAMESET BORDER=0 COLS="2,*">
+     <FRAME SRC="javascript:parent.blankPage('#0000C0')" NAME="statusFrame"  BORDER=0  SCROLLING=no>
+     <FRAME NAME="displayFrame" SRC="layer-grid1-display.html"  BORDER=0  SCROLLING=no>
+</FRAMESET>
+
+</HTML>
+

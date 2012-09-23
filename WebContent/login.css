@@ -1,0 +1,52 @@
+body{
+	
+	margin:0;
+	padding:0;
+	background-color: #09F;
+	font-family: "Microsoft YaHei" ! important;
+	font-size: 14px;	
+	
+}
+#login-div{
+	
+	position:relative;
+	margin:0 auto;
+	width:250px;
+	height:200px;
+	padding:0 auto;
+	
+	
+}
+#login-div h2{
+	
+	font-size: 1.5em;
+	color: #fff;
+	
+}
+.fromgroup{
+	
+	width:300px;
+	
+}
+.fromgroup label{
+	
+	float:left;
+	width:60px;
+	margin:0;
+	padding:0;
+	color:#ffffff;
+	
+}
+.fromgroup input[type="text"],input[type="password"]{
+	
+	
+	width:150px;
+	height:20px;
+	
+}
+.fromgroup .btn_submit{
+	
+	margin-left:200
+	width:80px;
+	height:20px;
+}
